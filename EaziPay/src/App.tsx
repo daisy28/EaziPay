@@ -15,24 +15,22 @@ export const ToggleContext = createContext(false);
 
 const Layout = () => {
   const [toggle] = useState(false);
-  const [users, setUsers] = useState([]);
-  const lendsqrUsers = `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users`;
-  useEffect(() => {
-    axios
-      .get(lendsqrUsers)
-      .then((response) => {
-        setUsers(response.data);
-      })
-      .catch((err) => console.log(err));
-  }, [lendsqrUsers]);
+  // const [users, setUsers] = useState([]);
+  // const lendsqrUsers = `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users`;
+  // useEffect(() => {
+  //   axios
+  //     .get(lendsqrUsers)
+  //     .then((response) => {
+  //       setUsers(response.data);
+  //     })
+  //     .catch((err) => console.log(err));
+  // }, [lendsqrUsers]);
 
   return (
-    <UserContext.Provider value={{ users, setUsers }}>
       <ToggleContext.Provider value={ toggle }>
-        {/* <Dashboard/> */}
+        <LandingPage />
         <Outlet />
       </ToggleContext.Provider>
-    </UserContext.Provider>
   )
 }
 
