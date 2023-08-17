@@ -1,7 +1,8 @@
-import { useState, useEffect, createContext, Dispatch, SetStateAction } from "react";
+import { useState,  createContext, Dispatch, SetStateAction } from "react";
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import LandingPage from "./pages/landingPage";
+import Dashboard from "./pages/Dashboard";
 
 
 export type UserState = {
@@ -28,7 +29,7 @@ const Layout = () => {
 
   return (
       <ToggleContext.Provider value={ toggle }>
-        <LandingPage />
+        <Dashboard />
         <Outlet />
       </ToggleContext.Provider>
   )
@@ -45,10 +46,10 @@ function App() {
         path: "/dashboard",
         element: <Layout />,
         children: [
-          // {
-          //   index: true,
-          //   element: <Users />
-          // },
+          {
+            index: true,
+            element: <Dashboard />
+          },
           // {
           //   path: "user-page",
           //   element: <UserPage />

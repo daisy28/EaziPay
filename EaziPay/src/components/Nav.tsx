@@ -59,7 +59,9 @@ const Nav = () => {
                 <button
                   className={`border border-[#11453b] p-3 text-green rounded-3xl`}
                 >
-                  Login
+                  <Link to="/dashboard">
+                    Login
+                  </Link>
                 </button>
                 <button className={`p-3 text-white bg-[#11453b] rounded-3xl`}>
                   Register
@@ -92,7 +94,9 @@ const Nav = () => {
           <button
             className={`border border-[#11453b] p-3 text-green rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl`}
           >
-            Login
+            <Link to="/dashboard">
+              Login
+            </Link>
           </button>
           <button
             className={`p-3 text-white bg-[#11453b] rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl`}
