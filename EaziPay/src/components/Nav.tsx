@@ -1,18 +1,21 @@
 import { useState, useContext } from "react";
 import { ToggleContext } from "../App";
 import Logo from "../Assets/Frame 48096238.png";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const toggle = useContext(ToggleContext);
   const [toggled, setToggled] = useState(toggle);
 
   return (
-    <nav className={`fixed right-0 left-0 top-0 z-20 bg-white text-[1rem] font-[500] leading-[24px]`}>
+    <nav className={`fixed right-0 left-0 top-0 z-40 bg-white text-[1rem] font-[500] leading-[24px]`}>
       <div
         className={`flex justify-between items-start shadow-md p-4 md:items-center lg:px-8`}
       >
         <div>
-          <img src={Logo} alt="Brand Logo" />
+          <Link to="/">
+            <img src={Logo} alt="Brand Logo" />
+          </Link>
         </div>
 
         <div className={`md:hidden`}>

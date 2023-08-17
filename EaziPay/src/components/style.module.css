@@ -1,0 +1,13 @@
+.brand_background {
+     background-image: url("../Assets/Eazi Wave.png");
+     background-repeat: no-repeat;
+     object-fit: cover;
+     background-size: cover;
+}
+
+@media screen and (min-width: 768px){
+     .cards {
+          width: 400px !important;
+     }
+     
+}
