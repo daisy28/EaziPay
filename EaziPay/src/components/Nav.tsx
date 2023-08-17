@@ -2,6 +2,8 @@ import { useState, useContext } from "react";
 import { ToggleContext } from "../App";
 import Logo from "../Assets/Frame 48096238.png";
 import { Link } from "react-router-dom";
+import { RiMenu2Fill } from "react-icons/ri"
+import { AiOutlineClose } from "react-icons/ai"
 
 const Nav = () => {
   const toggle = useContext(ToggleContext);
@@ -22,10 +24,10 @@ const Nav = () => {
           <div
             className={` ${
               toggled ? `hidden` : `block`
-            } text-[2rem] cursor-pointer`}
+            } text-[1.5rem] cursor-pointer text-[#11453b]`}
             onClick={() => setToggled((prevState) => !prevState)}
           >
-            =
+            <RiMenu2Fill />
           </div>
 
           <div
@@ -44,22 +46,22 @@ const Nav = () => {
                 <div
                   className={`${
                     toggled ? `block` : `hidden`
-                  } text-[2rem] cursor-pointer ml-auto `}
+                  } text-[1.5rem] cursor-pointer ml-auto text-[#11453b]`}
                   onClick={() => setToggled((prevState) => !prevState)}
                 >
-                  x
+                  <AiOutlineClose />
                 </div>
-                <a href="#">Individual</a>
-                <a href="#">Business</a>
-                <a href="#">Pricing</a>
-                <a href="#">Set your payroll</a>
+                <a href="#" className={`hover:text-[#ea4e4b]`}>Individual</a>
+                <a href="#" className={`hover:text-[#ea4e4b]`}>Business</a>
+                <a href="#" className={`hover:text-[#ea4e4b]`}>Pricing</a>
+                <a href="#" className={`hover:text-[#ea4e4b]`}>Set your payroll</a>
               </div>
 
               <div className={`flex flex-col gap-2 mt-[3rem]  text-[.8rem] font-[500] leading-[20px]`}>
                 <button
                   className={`border border-[#11453b] p-3 text-green rounded-3xl`}
                 >
-                  <Link to="/dashboard">
+                  <Link to="/admin">
                     Login
                   </Link>
                 </button>
@@ -77,16 +79,16 @@ const Nav = () => {
           >
             <div
               className={`${
-                toggled ? `block` : `hidden`
+                toggled ? `block md:hidden` : `hidden`
               } text-[2rem] cursor-pointer ml-auto `}
               onClick={() => setToggled((prevState) => !prevState)}
             >
               x
             </div>
-            <a href="#">Individual</a>
-            <a href="#">Business</a>
-            <a href="#">Pricing</a>
-            <a href="#">Set your payroll</a>
+            <a href="#" className={`hover:text-[#ea4e4b]`}>Individual</a>
+            <a href="#" className={`hover:text-[#ea4e4b]`}>Business</a>
+            <a href="#" className={`hover:text-[#ea4e4b]`}>Pricing</a>
+            <a href="#" className={`hover:text-[#ea4e4b]`}>Set your payroll</a>
           </div>
         </div>
 
@@ -94,7 +96,7 @@ const Nav = () => {
           <button
             className={`border border-[#11453b] p-3 text-green rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl`}
           >
-            <Link to="/dashboard">
+            <Link to="/admin">
               Login
             </Link>
           </button>

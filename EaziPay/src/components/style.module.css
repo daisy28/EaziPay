@@ -5,6 +5,24 @@
      background-size: cover;
 }
 
+.dashboard_background {
+     background-image: url("../Assets/Mask group.png");
+     background-color: #11453b;
+     background-blend-mode: multiply;
+     background-repeat: no-repeat;
+     object-fit: cover;
+     background-size: cover;
+}
+
+.wallet_balance {
+     background-image: url("../Assets/Mask group.png");
+     background-color: #11453b;
+     background-blend-mode: multiply;
+     background-repeat: no-repeat;
+     object-fit: cover;
+     background-size: cover;
+}
+
 @media screen and (min-width: 768px){
      .cards {
           width: 400px !important;

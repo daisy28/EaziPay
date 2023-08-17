@@ -7,13 +7,13 @@ import Send from "../Assets/send.png";
 
 const Footer = () => {
   return (
-    <footer className={`p-8`}>
+    <footer className={`p-8 my-[4rem] mt-[6rem]`}>
       <div
-        className={`flex flex-col md:flex-row md:justify-between md:items-start gap-4`}
+        className={`flex flex-col md:flex-row md:justify-between md:items-start gap-4 text-center md:text-left`}
       >
         <div className={`mb-10 md:mb-0 order-8 md:order-[-1]`}>
           <div className={`mb-6`}>
-            <img src={Logo} alt="" />
+            <img className={`mx-auto md:mx-0`} src={Logo} alt="" />
           </div>
 
           <div className={`mb-8`}>
@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className={`flex justify-between items-center gap-4 w-[25%]`}>
+          <div className={`flex justify-between items-center gap-4 w-[75%] mx-auto  md:mx-0 md:w-[25%]`}>
             <img className={`cursor-pointer`} src={Instagram} alt="" />
             <img className={`cursor-pointer`} src={Twitter} alt="" />
             <img className={`cursor-pointer`} src={LinkedIn} alt="" />
@@ -45,10 +45,10 @@ const Footer = () => {
           >
             Product
           </h1>
-          <a href="#">Individual</a>
-          <a href="#">Businesses</a>
-          <a href="#">Request Demo</a>
-          <a href="#">Pricing</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Individual</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Businesses</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Request Demo</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Pricing</a>
         </div>
 
         <div
@@ -59,8 +59,8 @@ const Footer = () => {
           >
             Legal
           </h1>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Privacy Policy</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Terms of Service</a>
         </div>
 
         <div
@@ -71,10 +71,10 @@ const Footer = () => {
           >
             Resources
           </h1>
-          <a href="#">Faqs</a>
-          <a href="#">Blog</a>
-          <a href="#">Career</a>
-          <a href="#">Customer Stories</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Faqs</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Blog</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Career</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>Customer Stories</a>
         </div>
 
         <div
@@ -85,7 +85,7 @@ const Footer = () => {
           >
             Contact us
           </h1>
-          <a href="#">eazipay@gmail.com</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>eazipay@gmail.com</a>
           <p>+234 816 878 9518</p>
           <div className={`relative`}>
             <input

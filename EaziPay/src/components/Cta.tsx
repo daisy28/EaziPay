@@ -5,7 +5,7 @@ import Frame from "../Assets/Frame 25.png";
 
 const Cta = () => {
   return (
-    <section className={`p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8`}>
+    <section className={`p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8 md:mt-[10rem]`}>
       <div>
         <img
           className={`absolute top-0 md:left-[40px] lg:left-[60px]`}
@@ -17,7 +17,7 @@ const Cta = () => {
         className={`flex flex-col md:flex-row md:my-[7rem] md:justify-between md:items-center`}
       >
         <div className={`order-1 relative md:w-[50%]`}>
-          <div className={`p-4 text-center lg:px-8`}>
+          <div className={`text-center lg:px-8`}>
             <h1
               className={`font-[700] text-[2.4rem] leading-[52px] text-[#292a29] md:text-[3rem] md:leading-[62px] md:text-left lg:text-[4rem] lg:leading-[72px]`}
             >
