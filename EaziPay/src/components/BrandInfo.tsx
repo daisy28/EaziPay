@@ -51,10 +51,10 @@ const BrandInfo = () => {
               <div
                 className={`${
                   style.cards
-                } bg-[#11453b] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative ${
-                  id === 0 ? `lg:z-10 lg:right-[-60px]` : ``
-                } ${id === 1 ? `lg:z-10 lg:right-[10px]` : ``} ${
-                  id === 2 ? `lg:z-20 lg:right-[60px]` : ``
+                } bg-[#11453b] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative cursor-pointer ${
+                  id === 0 ? `lg:z-10 lg:right-[-60px] hover:left-[-5px]` : ``
+                } ${id === 1 ? `lg:z-10 lg:right-[10px] hover:left-[-45px]` : ``} ${
+                  id === 2 ? `lg:z-20 lg:right-[60px] hover:left-[-95px]` : ``
                 }`}
               >
                 <h2
@@ -77,7 +77,7 @@ const BrandInfo = () => {
             className={`font-[400] text-[1.2rem] leading-[24px] text-center text-[#515251] pb-8`}
           >
             We're happy to answer your queries. Please, reach us at{" "}
-            <span className={`text-[#ea4e4b]`}>helo@myeazipay.com</span> and
+            <span className={`text-[rgb(234,78,75)]`}>helo@myeazipay.com</span> and
             expect our response shortly after
           </p>
         </div>

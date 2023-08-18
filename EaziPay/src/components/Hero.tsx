@@ -43,16 +43,16 @@ const Hero = () => {
                 className={`flex justify-center items-center gap-2 md:gap-4 md:justify-start`}
               >
                 <div
-                  className={`bg-white shadow-md w-[177px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
                 >
-                  <img src={Apple} alt="Apple Icon" />
+                  <img className={`w-[40px] h-[40px]`} src={Apple} alt="Apple Icon" />
                   <div>
                     <p
                       className={`font-[500] text-[.7rem] leading-[16px] text-[#515251] text-left`}
                     >
                       Download on the{" "}
                       <span
-                        className={`font-[700] text-[.8rem] leading-[24px] text-[#515251]`}
+                        className={`font-[700] text-[1rem] leading-[24px] text-[#515251]`}
                       >
                         Appstore
                       </span>
@@ -61,16 +61,16 @@ const Hero = () => {
                 </div>
 
                 <div
-                  className={`bg-white shadow-md w-[177px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
                 >
-                  <img src={Google} alt="Google Icon" />
+                  <img className={`w-[40px] h-[40px]`} src={Google} alt="Google Icon" />
                   <div>
                     <p
                       className={`font-[500] text-[.7rem] leading-[16px] text-[#515251] text-left`}
                     >
                       Get on{" "}
                       <span
-                        className={`font-[700] text-[.8rem] leading-[24px] text-[#515251]`}
+                        className={`font-[700] text-[1rem] leading-[24px] text-[#515251]`}
                       >
                         Google Play
                       </span>

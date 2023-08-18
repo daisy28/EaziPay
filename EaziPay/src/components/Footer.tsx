@@ -85,11 +85,11 @@ const Footer = () => {
           >
             Contact us
           </h1>
-          <a href="#" className={`hover:text-[#ea4e4b]`}>eazipay@gmail.com</a>
-          <p>+234 816 878 9518</p>
+          <a href="#" className={`hover:text-[rgb(234,78,75)]`}>eazipay@gmail.com</a>
+          <a href="#" className={`hover:text-[#ea4e4b]`}>+234 816 878 9518</a>
           <div className={`relative`}>
             <input
-              className={`bg-[#f2f1f1] rounded-[10px] p-4 px-6 text-[.8rem] font-[400] leading-[1.2rem] w-full outline-none`}
+              className={`bg-[rgb(242,241,241)] rounded-[10px] p-4 px-6 text-[.8rem] font-[400] leading-[1.2rem] w-full outline-none`}
               placeholder="Your email address"
               type="text"
             />

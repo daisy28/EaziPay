@@ -1,8 +1,9 @@
 .brand_background {
-     background-image: url("../Assets/Eazi Wave.png");
+     background-image: url("../Assets/Eazi Wave.png"), url("../Assets/audience-patterns.5d18a20d.png");
      background-repeat: no-repeat;
      object-fit: cover;
      background-size: cover;
+     background-blend-mode: multiply;
 }
 
 .dashboard_background {
@@ -53,9 +54,17 @@
      background-color: #d1cccc;
 }
 
+.resize_width {
+     width: calc(100% - 60px) !important;
+     margin-left: auto;
+}
+
 @media screen and (min-width: 768px){
      .cards {
           width: 400px !important;
      }
-     
+     .resize_width{
+          width: calc(100% - 240px)!important;
+          margin-left: auto;
+     }
 }

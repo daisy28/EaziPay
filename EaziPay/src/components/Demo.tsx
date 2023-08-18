@@ -44,13 +44,13 @@ const Demo = () => {
             className={`p-2 flex justify-between items-center border border-[#e7e8e7] rounded-[16px] mb-8 gap-2`}
           >
             <button
-              className={`p-3 bg-[#11453b] rounded-[12px] text-[500] text-[1rem] leading-[24px] text-white w-[48%] md:w-[190px] lg:w-[230px]`}
+              className={`${company ? `bg-[#f2f1f1] text-[#515251]` : `bg-[#11453b] text-white`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px]`}
               onClick={() => setCompany(false)}
             >
               Individual
             </button>
             <button
-              className={`p-3 bg-[#f2f1f1] rounded-[12px] text-[500] text-[1rem] leading-[24px] text-[#515251] w-[48%] md:w-[190px] lg:w-[230px]`}
+              className={`${company ? `bg-[#11453b] text-white` : `bg-[#f2f1f1] text-[#515251]`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px]`}
               onClick={() => setCompany(true)}
             >
               Company

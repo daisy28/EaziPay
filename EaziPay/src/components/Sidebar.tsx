@@ -79,7 +79,7 @@ const Sidebar = () => {
       >
         <div
           className={`${style.scroll_style} ${
-            toggled ? `w-[240px]` : `w-[60px] md:w-[240px]`
+            toggled ? `w-[240px] z-50` : `w-[60px] md:w-[240px]`
           } bg-[#ffffff] shadow-lg fixed overflow-y-scroll overflow-x-hidden top-0 bottom-0 left-0 z-20 `}
         >
           <div
@@ -91,7 +91,7 @@ const Sidebar = () => {
             <img className={``} src={Arrow} alt="arrow" />
           </div>
 
-          <div className={`${style.dashboard_background} mb-[4rem] w-[60px] md:w-full`}>
+          <div className={`${style.dashboard_background} mb-[4rem] w-[60px] md:w-full h-[80px] flex items-center justify-center md:h-[112px]`}>
             <div className={`p-4 relative`}>
                <img className={`relative z-40`} src={Logo} alt="" />
             </div>

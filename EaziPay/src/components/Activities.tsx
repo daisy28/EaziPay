@@ -6,7 +6,7 @@ import style from "./style.module.css";
 
 const Activities = () => {
      return (
-          <section className={` bg-[#fff] absolute p-4 right-0 left-[60px] md:left-[240px] z-10 top-[2180px] md:top-[1600px] lg:top-[1300px] font-face-ae`}>
+          <section className={` bg-[#fff] relative p-4 right-0 my-6 font-face-ae`}>
                <div className={`${style.chat_scroll} overflow-x-scroll`}>
                <div className={`w-[1000px] p-4`}>
                     <h1 className={`font-[500] text-[2rem] leading-[40px] text-[#292a29] mb-8`}>Recent Activities</h1>

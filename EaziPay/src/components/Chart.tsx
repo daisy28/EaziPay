@@ -1,11 +1,53 @@
 import Arrow from "../Assets/Chevron_Right.png";
-import ChartFlow from "../Assets/Frame 118.png";
 import style from "./style.module.css";
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip,  } from "chart.js";
+import { Line } from "react-chartjs-2";
 
 const Chart = () => {
+
+  ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, );
+  const options = {
+    responsive: false,
+    plugins: {
+      lengend: {
+        display: false
+      },
+      title: {
+        display: false
+      },
+      subtitle: {
+        display: false
+      }
+    },
+  };
+  const labels = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEPT", "OCT", "NOV", "DEC"];
+  const data = {
+    labels,
+    datasets: [
+      {
+        data: [15, 20, 30, 40, 50, 90, 40, 60, 200, 150],
+        borderColor: "rgb(17,69,59)",
+        backgroundColor: `rgb(17,69,59)`,
+        pointStyle: false,
+        tension: 1,
+        borderWidth: 1,
+        capBeizerPoints: true,
+      },
+      {
+        data: [9, 15, 25, 30, 25, 100, 80, 30, 150, 120],
+        borderColor: `rgb(234,78,75)`,
+        backgroundColor: `rgb(234,78,75))`,
+        pointStyle: false,
+        tension: 1,
+        borderWidth: 1,
+        capBeizerPoints: true,
+      },
+    ]
+  }
+
   return (
     <section
-      className={`bg-[#fff] absolute p-4 right-0 left-[60px] md:left-[240px] z-10 top-[1600px] md:top-[1100px] lg:top-[750px] font-face-ae`}
+      className={`bg-[#fff] p-4 relative right-0 my-6 font-face-ae`}
     >
       <div
         className={`${style.chat_scroll} border border-[#e7e8e7] rounded-[16px] p-4 shadow-md overflow-x-scroll`}
@@ -47,7 +89,8 @@ const Chart = () => {
           </div>
 
           <div>
-            <img className={`w-[100%]`} src={ChartFlow} alt="Chart" />
+            {/* <img className={`w-[100%]`} src={ChartFlow} alt="Chart" /> */}
+            <Line style={{width: "910px", height: "500px", marginTop: "2rem"}} options={options} data={data} />
           </div>
           <div
             className={`w-[72px] bg-[#11453b] py-2 px-3 text-center text-white font-[700] text-[1rem] leading-[24px] ml-auto`}
