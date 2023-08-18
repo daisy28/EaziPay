@@ -4,6 +4,7 @@ import LandingPage from "./pages/landingPage";
 import Sidebar from "./components/Sidebar";
 import Admin from "./pages/Admin";
 import ErrorPage from "./components/ErrorPage";
+import Wallet from "./components/Wallet";
 
 export const ToggleContext = createContext(false);
 
@@ -36,10 +37,10 @@ function App() {
             index: true,
             element: <Admin />
           },
-          // {
-          //   path: "admin",
-          //   element: <Admin />
-          // },
+          {
+            path: "wallet",
+            element: <Wallet />
+          },
         ]
       }
     ]

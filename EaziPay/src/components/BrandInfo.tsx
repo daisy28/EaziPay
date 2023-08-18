@@ -44,17 +44,17 @@ const BrandInfo = () => {
         </div>
 
         <div
-          className={`mb-10 flex flex-col gap-4 md:flex-row md:justify-center lg:gap-0 w-[90%] mx-auto`}
+          className={`mb-10 flex flex-col gap-4 md:flex-row md:justify-center lg:gap-0`}
         >
           {data.map((item, id) => {
             return (
               <div
                 className={`${
                   style.cards
-                } bg-[#11453b] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative cursor-pointer ${
-                  id === 0 ? `lg:z-10 lg:right-[-60px] hover:left-[-5px]` : ``
-                } ${id === 1 ? `lg:z-10 lg:right-[10px] hover:left-[-45px]` : ``} ${
-                  id === 2 ? `lg:z-20 lg:right-[60px] hover:left-[-95px]` : ``
+                } md:w-[380px] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative cursor-pointer ${
+                  id === 0 ? `md:left-[150px] z-0 md:hover:left-[0]` : ``
+                } ${id === 1 ? `z-10 ` : ``} ${
+                  id === 2 ? `md:left-[-150px] z-0 md:hover:left-[0]` : ``
                 }`}
               >
                 <h2

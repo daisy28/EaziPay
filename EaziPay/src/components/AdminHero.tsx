@@ -50,7 +50,7 @@ const AdminHero = () => {
 
               <div className={`lg:w-[70%]`}>
                 <div
-                className={`${style.wallet_balance} p-6 flex flex-col gap-5 border border-[#e7e8e7] rounded-[24px] shadow-md md:flex-row md:justify-between md:items-end mb-8`}
+                className={`${style.wallet_balance} p-6 flex flex-col gap-5 border border-[#e7e8e7] lg:py-[3.5rem] lg:mb-[3.5rem] rounded-[24px] shadow-md md:flex-row md:justify-between md:items-end mb-8`}
               >
                 <div>
                   <h3

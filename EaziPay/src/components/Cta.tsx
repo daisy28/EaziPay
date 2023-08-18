@@ -2,10 +2,11 @@ import CtaImg from "../Assets/Frame 48096458.png";
 import Apple from "../Assets/Group 36028.png";
 import Google from "../Assets/Group 36026.png";
 import Frame from "../Assets/Frame 25.png";
+import style from "./style.module.css";
 
 const Cta = () => {
   return (
-    <section className={`p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8 md:mt-[10rem] font-face-ae`}>
+    <section className={`${style.cta_background} p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8 md:mt-[10rem] font-face-ae`}>
       <div>
         <img
           className={`absolute top-0 md:left-[40px] lg:left-[60px]`}

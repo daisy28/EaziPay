@@ -33,14 +33,14 @@ const Nav = () => {
           <div
             className={`${
               toggled
-                ? `h-[100vh] bg-[#11453b78] fixed top-0 bottom-0 z-20 w-[100%] left-0`
+                ? `h-[100vh] bg-[#11453b78] fixed top-0 bottom-0 z-20 right-[190px] left-0`
                 : `h-0 bg-transparent relative`
             }  `}
           >
             <div
               className={` ${
                 toggled ? `block` : `hidden`
-              } flex flex-col justify-start bg-slate-300 w-[60%] p-6 fixed right-0 bottom-0 top-0`}
+              } flex flex-col justify-start bg-white w-[190px] p-6 fixed right-0 bottom-0 top-0`}
             >
               <div className={`flex flex-col mb-4 gap-4 text-[#515251]`}>
                 <div

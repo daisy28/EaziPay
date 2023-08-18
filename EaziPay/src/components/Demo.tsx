@@ -99,7 +99,7 @@ const Demo = () => {
                   className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none flex`}
                 >
                   <select
-                    className={`outline-none ml-auto`}
+                    className={`outline-none ml-auto bg-transparent text-[#b5b6b5]`}
                     name="company size"
                     id="size"
                     title="size"

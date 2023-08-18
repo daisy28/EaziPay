@@ -2,12 +2,19 @@ import CompanyLogo from "../Assets/Company Logo.png";
 import Admin from "../Assets/Ellipse 12.png";
 import { BsBell } from "react-icons/bs";
 import Arrow from "../Assets/Chevron_Right.png";
+import Logo from "../Assets/EAZIPAY LOGO NEW 1.png";
+import style from "./style.module.css";
 
 const AdminNav = () => {
   return (
     <div
-      className={`bg-[#fff] p-4 flex justify-between items-center shadow-md fixed right-0 top-0 left-[60px] md:left-[240px] z-20 font-face-ae`}
+      className={`bg-[#fff] flex justify-between items-center shadow-md fixed right-0 top-0 left-[0] md:left-[240px] z-20 font-face-ae md:p-2`}
     >
+      <div className={`${style.dashboard_background} md:hidden w-[75px] h-[72px] md:w-[150px] flex items-center justify-center`}>
+            <div className={`p-4 relative`}>
+               <img className={`relative z-40`} src={Logo} alt="" />
+            </div>
+          </div>
       <div>
         <img className={`w-[40px] md:w-[150px]`} src={CompanyLogo} alt="" />
       </div>
