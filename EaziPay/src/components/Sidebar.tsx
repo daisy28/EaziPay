@@ -11,6 +11,7 @@ import Book from "../Assets/open book.png";
 import Call from "../Assets/call.png";
 import Settings from "../Assets/material-symbols_settings-outline.png";
 import Logo from "../Assets/EAZIPAY LOGO NEW 1.png";
+// import { GoHomeFill } from "react-icons/go";
 
 
 const menuLinks = [
@@ -22,42 +23,42 @@ const menuLinks = [
   {
     img: Wallet,
     link: "Wallet",
-    route: "wallet"
+    route: "/admin/wallet"
   },
   {
     img: Employee,
     link: "Employee Management",
-    route: "employee_management"
+    route: "/admin/employee_management"
   },
   {
     img: Payroll,
     link: "Payroll",
-    route: "payroll"
+    route: "/admin/payroll"
   },
   {
     img: Compliance,
     link: "Compliance",
-    route: "compliance"
+    route: "/admin/compliance"
   },
   {
     img: Loan,
     link: "Quick Loan",
-    route: "quick_loan"
+    route: "/admin/quick_loan"
   },
   {
     img: Book,
     link: "Book Keeping",
-    route: "book_keeping"
+    route: "/admin/book_keeping"
   },
   {
     img: Call,
     link: "Support",
-    route: "support"
+    route: "/admin/support"
   },
   {
     img: Settings,
     link: "Settings",
-    route: "settings"
+    route: "/admin/settings"
   },
 ]
 
@@ -68,7 +69,7 @@ const Sidebar = () => {
   return (
     <section className={`font-face-ae`}>
         <div
-          className={`${style.scroll_style} bg-[#ffffff] w-full md:w-[240px] shadow-lg fixed md:overflow-y-scroll md:overflow-x-hidden overflow-x-scroll md:top-0 md:bottom-0 bottom-[-16px] left-0 right z-20`}
+          className={`${style.scroll_style} bg-[#ffffff] w-full md:w-[240px] shadow-lg fixed md:overflow-y-scroll md:overflow-x-hidden overflow-x-scroll md:top-0 bottom-[-5px] md:bottom-0 left-0 right z-20`}
       >
         <div className={`${style.dashboard_background} hidden w-full md:flex items-center justify-center h-[95px] mb-[2.5rem]`}>
             <div className={`p-4 relative`}>

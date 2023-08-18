@@ -1,4 +1,4 @@
-import CompanyLogo from "../Assets/Company Logo.png";
+// import CompanyLogo from "../Assets/Company Logo.png";
 import Admin from "../Assets/Ellipse 12.png";
 import { BsBell } from "react-icons/bs";
 import Arrow from "../Assets/Chevron_Right.png";
@@ -15,11 +15,11 @@ const AdminNav = () => {
                <img className={`relative z-40`} src={Logo} alt="" />
             </div>
           </div>
-      <div>
+      {/* <div>
         <img className={`w-[40px] md:w-[150px]`} src={CompanyLogo} alt="" />
-      </div>
+      </div> */}
 
-      <div className={`flex items-center md:w-[400px] justify-end`}>
+      <div className={`flex items-center md:w-[400px] justify-end ml-auto`}>
         <div className={`relative cursor-pointer w-[16px] h-[16px] `}>
           <BsBell />
           <div

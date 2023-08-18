@@ -77,11 +77,11 @@ const AdminHero = () => {
                 </div>
               </div>
               
-              <div className={`flex gap-6 flex-col md:flex-row`}>
+              <div className={`flex gap-6 flex-wrap md:flex-row md:flex-nowrap`}>
                 {cards.map((card) => {
                   return (
                     <div
-                      className={`rounded-[24px] shadow-lg p-6 border border-[#e7e8e7] flex flex-col gap-6 items-center justify-center w-[168.5px] mx-auto`}
+                      className={`rounded-[24px] shadow-lg p-6 border border-[#e7e8e7] flex flex-col gap-6 items-center justify-center w-[150px] mx-auto`}
                       key={card.action}
                     >
                       <img
@@ -90,7 +90,7 @@ const AdminHero = () => {
                         alt=""
                       />
                       <p
-                        className={`font-[500] text-[.8rem] leading-[1rem] text-[#515251]`}
+                        className={`font-[500] text-[.8rem] leading-[1rem] text-[#515251] text-center`}
                       >
                         {card.action}
                       </p>

@@ -66,6 +66,28 @@
      background-image: radial-gradient(#0e6e5b 10%, #11453b 90%);
 }
 
+.input_label {
+     position: absolute !important;
+     pointer-events: none;
+     left: 20px;
+     top: 20px;
+     transition: .7s;
+     transform-origin: 0 50%;
+}
+
+.input_element:focus {
+     border: 1px solid#114538;
+}
+
+.input_element:focus ~ .input_label,
+.input_element:not(:placeholder-shown) ~ .input_label
+ {
+     transform: translateX(-5px) translateY(-28px);
+     padding: 0 0.4rem;
+     background-color: #e7e8e7;
+     transition: .7s;
+}
+
 
 @media screen and (min-width: 768px){
      .resize_width{

@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Admin from "./pages/Admin";
 import ErrorPage from "./components/ErrorPage";
 import Wallet from "./components/Wallet";
+import Settings from "./components/Settings";
 
 export const ToggleContext = createContext(false);
 
@@ -40,6 +41,10 @@ function App() {
           {
             path: "wallet",
             element: <Wallet />
+          },
+          {
+            path: "settings",
+            element: <Settings />
           },
         ]
       }
