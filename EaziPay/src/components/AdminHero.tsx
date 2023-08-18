@@ -31,10 +31,10 @@ const cards = [
 
 const AdminHero = () => {
   return (
-    <section>
+    <section className={``}>
       <div>
         <div
-          className={`bg-[#fff] p-4 flex justify-between items-center shadow-sm fixed right-0 top-0 left-[60px] md:left-[240px] z-20`}
+          className={`bg-[#fff] p-4 flex justify-between items-center shadow-md fixed right-0 top-0 left-[60px] md:left-[240px] z-20 font-face-ae`}
         >
           <div>
             <img className={`w-[40px] md:w-[150px]`} src={CompanyLogo} alt="" />
@@ -76,7 +76,7 @@ const AdminHero = () => {
         </div>
 
         <div
-          className={`bg-[#fff] mt-[3rem] absolute p-4 right-0 top-[80px] left-[60px] md:left-[240px] z-10`}
+          className={`bg-[#fff] mt-[3rem] absolute p-4 right-0 top-[80px] left-[60px] md:left-[240px] z-10 mb-10`}
         >
           <div>
             <div className={`text-left mb-10`}>
@@ -146,10 +146,6 @@ const AdminHero = () => {
                 
               </div>
 
-              
-
-              
-
               <div
                 className={`rounded-[24px] shadow-lg border border-[#e7e8e7] lg:w-[188px] mx-auto`}
               >
@@ -204,6 +200,10 @@ const AdminHero = () => {
             </div>
           </div>
         </div>
+
+        {/* <div>
+          <Chart />
+        </div> */}
       </div>
     </section>
   );

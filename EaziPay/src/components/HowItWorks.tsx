@@ -5,7 +5,7 @@ import Mask2 from "../Assets/Mask group4.png";
 
 const HowItWorks = () => {
   return (
-    <section className={`p-4 mb-8 mt-6 lg:px-8`}>
+    <section className={`p-4 mb-8 mt-6 lg:px-8 font-face-ae`}>
      <div className={`my-[5rem] text-center`}>
           <h1 className={`font-[500] text-[2.5rem] leading-[54px] text-[#11453b] md:leading-[64px] md:text-[3.8rem] mb-6`}>How EaziPay Works</h1>
           <p className={`font-[400] text-[1.5rem] leading-[36px] text-[#515251] mb-8`}>Get started in 3 simple steps</p>

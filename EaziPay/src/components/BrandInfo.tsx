@@ -27,7 +27,7 @@ const data = [
 const BrandInfo = () => {
   return (
     <section
-      className={`${style.brand_background} p-4 mb-8 py-8 pb-[6rem] mt-[4rem] md:mt-[6rem] md:pt-[6rem] lg:px-8`}
+      className={`${style.brand_background} p-4 mb-8 py-8 pb-[6rem] mt-[4rem] md:mt-[6rem] md:pt-[6rem] lg:px-8 font-face-ae`}
     >
       <div className={`relative`}>
         <div className={``}>

@@ -5,7 +5,7 @@ import Frame from "../Assets/Frame 25.png";
 
 const Cta = () => {
   return (
-    <section className={`p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8 md:mt-[10rem]`}>
+    <section className={`p-4 bg-[#ffe9e7] relative mb-8 py-[4rem] lg:px-8 md:mt-[10rem] font-face-ae`}>
       <div>
         <img
           className={`absolute top-0 md:left-[40px] lg:left-[60px]`}

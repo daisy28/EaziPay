@@ -4,7 +4,7 @@ import Google from "../Assets/Group 36026.png";
 
 const Hero = () => {
   return (
-    <section className={`relative mb-8`}>
+    <section className={`relative mb-8 font-face-ae`}>
       <div className={`flex flex-col md:flex-row`}>
         <div
           className={`order-1 relative top-[-30px] md:absolute md:w-[50%] md:top-[120px]`}

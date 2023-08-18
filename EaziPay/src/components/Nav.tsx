@@ -10,7 +10,7 @@ const Nav = () => {
   const [toggled, setToggled] = useState(toggle);
 
   return (
-    <nav className={`fixed right-0 left-0 top-0 z-40 bg-white text-[1rem] font-[500] leading-[24px]`}>
+    <nav className={`fixed right-0 left-0 top-0 z-40 bg-white text-[1rem] font-[500] leading-[24px] font-face-ae`}>
       <div
         className={`flex justify-between items-start shadow-md p-4 md:items-center lg:px-8`}
       >

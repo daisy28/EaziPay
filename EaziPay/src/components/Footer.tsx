@@ -7,7 +7,7 @@ import Send from "../Assets/send.png";
 
 const Footer = () => {
   return (
-    <footer className={`p-8 my-[4rem] mt-[6rem]`}>
+    <footer className={`p-8 my-[4rem] mt-[6rem] font-face-ae`}>
       <div
         className={`flex flex-col md:flex-row md:justify-between md:items-start gap-4 text-center md:text-left`}
       >

@@ -69,7 +69,7 @@ const Sidebar = () => {
   const [toggled, setToggled] = useState(toggle);
 
   return (
-    <section className={``}>
+    <section className={`font-face-ae`}>
       <div
         className={`${
           toggled
@@ -78,7 +78,7 @@ const Sidebar = () => {
         }`}
       >
         <div
-          className={`${
+          className={`${style.scroll_style} ${
             toggled ? `w-[240px]` : `w-[60px] md:w-[240px]`
           } bg-[#ffffff] shadow-lg fixed overflow-y-scroll overflow-x-hidden top-0 bottom-0 left-0 z-20 `}
         >
@@ -93,7 +93,6 @@ const Sidebar = () => {
 
           <div className={`${style.dashboard_background} mb-[4rem] w-[60px] md:w-full`}>
             <div className={`p-4 relative`}>
-               {/* <img className={`absolute top-0 left-0 right-0 z-30`} src={Mask} alt="" /> */}
                <img className={`relative z-40`} src={Logo} alt="" />
             </div>
           </div>

@@ -4,7 +4,7 @@ import Frame2 from "../Assets/Frame 25 (1).png";
 const Demo = () => {
   const [company, setCompany] = useState(false);
   return (
-    <section className={`p-4 my-8 relative lg:px-8`}>
+    <section className={`p-4 my-8 relative lg:px-8 font-face-ae`}>
       <div>
         <img className={`absolute top-0 left-0`} src={Frame2} alt="Frame" />
       </div>
