@@ -8,6 +8,10 @@ const Chart = () => {
   ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, );
   const options = {
     responsive: false,
+    pointStyle: false,
+    tension: 1,
+    borderWidth: 1,
+    capBeizerPoints: true,
     plugins: {
       lengend: {
         display: false
@@ -23,24 +27,17 @@ const Chart = () => {
   const labels = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEPT", "OCT", "NOV", "DEC"];
   const data = {
     labels,
+    type: "line",
     datasets: [
       {
         data: [15, 20, 30, 40, 50, 90, 40, 60, 200, 150],
         borderColor: "rgb(17,69,59)",
-        backgroundColor: `rgb(17,69,59)`,
-        pointStyle: false,
-        tension: 1,
-        borderWidth: 1,
-        capBeizerPoints: true,
+        backgroundColor: "rgb(17,69,59)",
       },
       {
         data: [9, 15, 25, 30, 25, 100, 80, 30, 150, 120],
         borderColor: `rgb(234,78,75)`,
         backgroundColor: `rgb(234,78,75))`,
-        pointStyle: false,
-        tension: 1,
-        borderWidth: 1,
-        capBeizerPoints: true,
       },
     ]
   }
