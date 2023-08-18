@@ -85,7 +85,7 @@ const Settings = () => {
                          </div>
                     </div>
                     <div className={`relative my-8`}>
-                         <input className={`${style.input_element} bg-transparent rounded-[16px] border border-[#b5b6b5] p-4 w-full outline-nonefont-[400] text-[.8rem] leading-[20px] space-[.25px] text-[#8d8e8d]`} type="text" name="" id="officeAdress" placeholder=" " />
+                         <input className={`${style.input_element} bg-transparent rounded-[16px] border border-[#b5b6b5] p-4 w-full outline-none font-[400] text-[.8rem] leading-[20px] space-[.25px] text-[#8d8e8d]`} type="text" name="" id="officeAdress" placeholder=" " />
                          <label className={`${style.input_label} font-[400] text-[.8rem] leading-[1rem] space-[.25px] text-[#8d8e8d]`} htmlFor="officeAdress">Office Adrress</label>
                          <div className={`flex my-3 gap-2 items-center`}>
                               <button className={`rounded-[8px] border border-[#11453b] p-2 bg-[#f0f7eb] text-[#11453b] font-[500] text-[.8rem]`}>Upload Proof of Address</button>
