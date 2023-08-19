@@ -6,6 +6,7 @@ import Admin from "./pages/Admin";
 import ErrorPage from "./components/ErrorPage";
 import Wallet from "./components/Wallet";
 import Settings from "./components/Settings";
+import Employee from "./components/Employee";
 
 export const ToggleContext = createContext(false);
 
@@ -45,6 +46,10 @@ function App() {
           {
             path: "settings",
             element: <Settings />
+          },
+          {
+            path: "employee",
+            element: <Employee />
           },
         ]
       }

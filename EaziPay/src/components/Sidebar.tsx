@@ -26,7 +26,7 @@ const menuLinks = [
   {
     img: Employee,
     link: "Employee Management",
-    route: "/admin/employee_management"
+    route: "/admin/employee"
   },
   {
     img: Payroll,
