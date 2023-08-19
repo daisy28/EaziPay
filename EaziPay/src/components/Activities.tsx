@@ -12,7 +12,7 @@ const Activities = () => {
                     <h1 className={`font-[500] text-[2rem] leading-[40px] text-[#292a29] mb-8`}>Recent Activities</h1>
                     <div className={`flex gap-4 mb-4`}>
                          <div className={`relative`}>
-                              <input type="text" name="search" id="search" placeholder="Search employee" className={`w-[855px] p-3 border border-[#b5b6b5] rounded-[16px] text-[.8rem] font-[400] leading-[16px] text-[#b9bbc0] outline-none`} />
+                              <input type="text" name="search" id="search" placeholder="Search employee" className={`w-[855px] p-3 border border-[#b5b6b5] rounded-[16px] text-[.8rem] font-[400] leading-[16px] text-[#b9bbc0] outline-none bg-white`} />
                               <div className={`absolute w-[102px] bg-[#d9ebcd] py-2 px-6 rounded-r-[16px] flex justify-center items-center top-0 right-0 cursor-pointer`}>
                                    <img src={SearchIcon} alt="" />
                               </div>
@@ -22,7 +22,7 @@ const Activities = () => {
                               <p className={`font-[500] text-[.8rem] leading-[14px] text-[#8d8e8d]`}>Filter</p>
                          </div>
                     </div>
-                    <div className={`${style.chat_scroll} bg-[#f2f1f1] rounded-[20px] w-[100%] p-4 h-[716px] overflow-y-scroll`}>
+                    <div className={`${style.chat_scroll} bg-[rgba(242,241,241,0.50)] rounded-[20px] w-[100%] p-4 h-[716px] overflow-y-scroll`}>
                          <h3 className={`font-[500] text-[1.1rem] leading-[24px] text-[#515251]`}>Wednesday, November 09, 2022</h3>
 
                          <div className={`w-full bg-white mt-8 mb-4 rounded-[16px] border border-[#e7e8e7] py-3 px-6 shadow-md`}>

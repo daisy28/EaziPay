@@ -52,7 +52,7 @@ const data = [
 
 const Wallet = () => {
   return (
-    <section className={`${style.resize_width} p-4 mb-10 md:px-8 lg:px-[5rem]`}>
+    <section className={`${style.resize_width} p-4 mb-10 md:px-8 lg:px-[8rem] mt-6`}>
       <div>
         <div
           className={`flex justify-between items-center mb-8 fixed z-20 bg-white top-0 right-0 left-0 md:left-[240px] p-4 shadow-sm`}
@@ -107,13 +107,18 @@ const Wallet = () => {
               </div>
             </div>
 
-            <div className={`mb-8 lg:mb-0`}>
+            
+          </div>
+
+          <div className={`md:flex justify-between items-start gap-4 md:mb-10`}>
+
+            <div className={`mb-8 md:mb-0`}>
               <h2
                 className={`font-[500] text-[.8rem] leading-[1rem] space-[8%] text-[#515251] uppercase mb-8`}
               >
                 quick stats
               </h2>
-              <div className={`flex gap-4 mx-auto md:justify-start lg:gap-2`}>
+              <div className={`flex md:flex-col gap-4 mx-auto md:justify-start`}>
                 <div
                   className={`w-[155px] md:w-[200px] lg:w-[155px] rounded-[16px] p-4 px-5 bg-[#f2f1f1] flex flex-col gap-4`}
                 >
@@ -144,16 +149,16 @@ const Wallet = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className={`mb-[12rem]`}>
+
+            <div className={`mb-[12rem] md:mb-0`}>
             <h2
               className={`font-[500] text-[.8rem] leading-[1rem] space-[8%] text-[#515251] uppercase mb-8`}
             >
               quick actions
             </h2>
             <div
-              className={`rounded-[24px] border border-[#e7e8e7] p-4 grid grid-cols-3 gap-4 md:w-[412px] lg:w-[460px]`}
+              className={`rounded-[24px] border border-[#e7e8e7] p-4 grid grid-cols-3 gap-4`}
             >
               {data.map((item) => {
                 return (
@@ -164,10 +169,10 @@ const Wallet = () => {
                     <img
                       src={item.img}
                       alt={item.title}
-                      className={`md:w-[60px] md:h-[60px]`}
+                      className={`w-[60px] h-[60px] mx-auto`}
                     />
                     <p
-                      className={`font-[500] text-[.7rem] text-center md:text-left leading-[1rem] space-[.25px] text-[#515251]`}
+                      className={`font-[500] text-[.7rem] text-center leading-[1rem] space-[.25px] text-[#515251]`}
                     >
                       {item.title}
                     </p>
@@ -176,6 +181,8 @@ const Wallet = () => {
               })}
             </div>
           </div>
+          </div>
+          
         </div>
       </div>
     </section>

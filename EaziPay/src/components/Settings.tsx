@@ -9,7 +9,7 @@ import CompanyLogo from "../Assets/Frame 544.png";
 const Settings = () => {
      const [registeredCompany, setRegisteredCompany] = useState(false);
      return (
-          <section className={`${style.resize_width} mb-10 md:px-8 lg:px-[5rem]`}>
+          <section className={`${style.resize_width} mb-10 md:px-8 lg:px-[5rem] bg-[#f7f4f4]`}>
       <div>
         <div
           className={`flex justify-between items-center mb-8 fixed z-20 bg-white top-0 right-0 left-0 md:left-[240px] p-4 shadow-sm`}
@@ -34,7 +34,7 @@ const Settings = () => {
           </div>
         </div>
         
-        <div className={`relative top-[60px] my-5 bg-[#f7f4f4] p-4 md:p-8`}>
+        <div className={`relative top-[60px] my-5 p-4 md:p-8`}>
           <div className={`rounded-[16px] border border-[#e7e8e7] bg-white shadow-md p-4 flex justify-between items-center`}>
                <h2 className={`font-[500] text-[.8rem] leading-[16px] space-[6%] text-[#515251]`}>business profile</h2>
                <img src={Arrow} alt="arrow" className={`cursor-pointer`} />
@@ -51,13 +51,13 @@ const Settings = () => {
                </div>
           </div>
           
-          <div className={`rounded-[16px] border border-[#e7e8e7] py-4 px-2 bg-white`}>
+          <div className={`rounded-[16px] border border-[#e7e8e7] py-4 px-2 bg-white mb-[10rem]`}>
                <div className={`flex gap-4 items-center border-b border-[#e7e8e7] pb-4`}>
                     <img className={`rotate-[90deg] cursor-pointer`} src={Arrow} alt="" />
                     <h1 className={`font-[500] text-[1.1rem] text-[#515251] leading-[24px]`}>Edit Company Information</h1>
                </div>
                
-               <div className={`bg-[#e7e8e7] rounded-[16px] p-4 border border-[#e7e8e7]`}>
+               <div className={`rounded-[16px] mt-6 p-4 border border-[#e7e8e7]`}>
                     <div className={`my-4`}>
                          <div className={`flex gap-4 items-end`}>
                               <img src={CompanyLogo} alt="" />
@@ -149,7 +149,7 @@ const Settings = () => {
                          <label className={`${style.input_label} font-[400] text-[.8rem] leading-[1rem] space-[.25px] text-[#8d8e8d]`} htmlFor="website">Website</label>
                </div>
                
-               <div className={`relative mb-4`}>
+               <div className={`relative mb-2`}>
                          <input className={`${style.input_element} bg-transparent rounded-[16px] border border-[#b5b6b5] p-4 w-full outline-none font-[400] text-[.8rem] leading-[20px] space-[.25px] text-[#8d8e8d]`} type="text" name="" id="industry" placeholder=" " />
                          <label className={`${style.input_label} font-[400] text-[.8rem] leading-[1rem] space-[.25px] text-[#8d8e8d]`} htmlFor="industry">Industry</label>
                </div>
@@ -158,12 +158,13 @@ const Settings = () => {
                     
                </div>
                
-          </div>
-
-          <div className={`grid grid-cols-2 gap-4 mb-[10rem]`}>
+                              <div className={`grid grid-cols-2 gap-4 my-6`}>
                <button className={`border border-[11453b] rounded-[24px] px-4 py-2 text-[#11453b] font-[500] text-[.8rem] leading-[20px] space-[.1px] bg-white`}>Cancel</button> 
                <button className={`bg-[#11453b] rounded-[24px] px-4 py-2 text-white font-[500] text-[.8rem] leading-[20px] space-[.1px]`}>Save</button> 
           </div>
+          </div>
+
+          
         </div>
 
         

@@ -10,7 +10,7 @@ const AdminNav = () => {
       className={`bg-[#fff] flex justify-between items-center shadow-md fixed right-0 top-0 left-[0] md:left-[240px] z-20 font-face-ae md:p-2`}
     >
       <div className={`relative md:hidden`}>
-        <img className={`relative z-40 w-[62px] h-[62px] object-cover`} src={Logo} alt="" />
+        <img className={`relative z-40 w-[100px] h-[62px] object-cover`} src={Logo} alt="" />
       </div>
 
       <div className={`flex items-center md:w-[400px] justify-end ml-auto`}>

@@ -28,10 +28,10 @@ const cards = [
 
 const AdminHero = () => {
   return (
-    <section className={``}>
+    <section className={`bg-[#f9fafc]`}>
         <AdminNav />
         <div
-          className={`bg-[#fff] mt-[3rem] p-4 relative top-[60px] right-0 mb-[5rem]`}
+          className={`mt-[3rem] p-4 relative top-[60px] right-0 mb-[5rem]`}
         >
           <div>
             <div className={`text-left mb-10`}>
