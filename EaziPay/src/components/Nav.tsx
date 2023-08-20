@@ -33,7 +33,7 @@ const Nav = () => {
           <div
             className={`${
               toggled
-                ? `h-[100vh] bg-[#11453b78] fixed top-0 bottom-0 z-20 right-[190px] left-0`
+                ? `h-[100vh] bg-[#11453b78] fixed top-0 bottom-0 z-20 overflow-y-hidden right-[190px] left-0`
                 : `h-0 bg-transparent relative`
             }  `}
           >
