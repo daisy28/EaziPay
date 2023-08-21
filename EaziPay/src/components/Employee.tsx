@@ -64,7 +64,7 @@ const Employee = () => {
                          </div>
                     </div>
 
-                    <div className={`fixed bg-[#11453b] w-[52px] h-[52px] rounded-full z-20 cursor-pointer flex justify-center items-center text-white shadow-md text-[1rem] font-[700] leading-[24px] top-[50%] right-[16px]`}>+</div>
+                    <div className={`fixed bg-[#11453b] w-[52px] h-[52px] rounded-full z-20 cursor-pointer flex justify-center items-center text-white shadow-md text-[1rem] font-[700] leading-[24px] top-[50%] right-[16px] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition hover:text-[#11453b] hover:shadow-xl`}>+</div>
 
                     <div className={`relative top-[100px] my-6`}>
                          <div className={`flex flex-col gap-4 p-4`}>
@@ -82,16 +82,16 @@ const Employee = () => {
                               </div>
 
                               <div className={`grid grid-cols-2 gap-4 rounded-[16px] border border-[#e7e8e7] bg-white p-2`}>
-                                   <button className={`bg-[#11453b] rounded-[8px] py-2 px-4 shadow-sm text-white font-[500] text-[1rem] leading-[24px] text-center`}>All Employee</button>
-                                   <button className={`bg-[#f2f1f1] rounded-[8px] py-2 px-3 shadow-sm text-[#11453b] font-[500] text-[1rem] leading-[24px] text-center`}>Departments</button>
+                                   <button className={`bg-[#11453b] border rounded-[8px] py-2 px-4 shadow-sm text-white font-[500] text-[1rem] leading-[24px] text-center hover:bg-[#f0f7eb] hover:border hover:border-[#11453b] hover:text-[#11453b] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}>All Employee</button>
+                                   <button className={`bg-[#f2f1f1] border border-[#f2f1f1] rounded-[8px] py-2 px-3 shadow-sm text-[#11453b] font-[500] text-[1rem] leading-[24px] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition text-center`}>Departments</button>
                               </div>
                          </div>
 
                          <div className={`my-8`}>
                               <div className={`relative flex gap-4 items-start mb-2 p-4`}>
-                                   <input className={`w-full rounded-[12px] border-[.2px] border-[#2c3e536f] p-3 py-2 outline-none`} type="text" name="search" id="" placeholder="Search" />
+                                   <input className={`w-full rounded-[12px] border-[.2px] border-[#2c3e536f] p-3 py-2 outline-none focus:border-[#11453b]`} type="text" name="search" id="" placeholder="Search" />
                                    <img className={`absolute top-[24px] right-[75px]`} src={Search} alt="search button" />
-                                   <div className={`bg-[#f2f1f1] w-[40px] h-[40px] rounded-[8px] flex justify-center items-center cursor-pointer`}>
+                                   <div className={`bg-[#f2f1f1] w-[40px] h-[40px] rounded-[8px] flex justify-center items-center cursor-pointer hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}>
                                         <img src={Menu} alt="Menu Icon" />
                                    </div>
                               </div>

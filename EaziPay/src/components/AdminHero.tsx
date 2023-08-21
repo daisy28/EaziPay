@@ -1,9 +1,9 @@
 import { BsEye } from "react-icons/bs";
 import style from "./style.module.css";
-import Employee from "../Assets/Frame 27401.png";
-import Salary from "../Assets/Frame 27402.png";
-import Pay from "../Assets/Frame 48095759.png";
-import Loan from "../Assets/Frame 48095757.png";
+import Employee from "../Assets/Frame 27401.svg";
+import Salary from "../Assets/Frame 27402.svg";
+import Pay from "../Assets/Frame 48095759.svg";
+import Loan from "../Assets/Frame 48095757.svg";
 import Calendar from "../Assets/calendar.png";
 import AdminNav from "./AdminNav";
 
@@ -70,7 +70,7 @@ const AdminHero = () => {
 
                 <div className={`my-6 md:my-0`}>
                   <button
-                    className={`p-3 rounded-[24px] bg-[#d9ebcd] w-[132px] text-[.8rem] font-[500] leading-[20px] text-[rgb(17,69,59)]`}
+                    className={`p-3 rounded-[24px] bg-[#d9ebcd] w-[132px] text-[.8rem] font-[500] leading-[20px] text-[rgb(17,69,59)] hover:bg-white hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                   >
                     Fund Wallet
                   </button>
@@ -81,7 +81,7 @@ const AdminHero = () => {
                 {cards.map((card) => {
                   return (
                     <div
-                      className={`rounded-[24px] shadow-lg p-6 border border-[#e7e8e7] flex flex-col gap-6 items-center justify-center w-[150px] mx-auto`}
+                      className={`rounded-[24px] shadow-lg p-6 border border-[#e7e8e7] flex flex-col gap-6 items-center justify-center w-[150px] mx-auto cursor-pointer hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                       key={card.action}
                     >
                       <img

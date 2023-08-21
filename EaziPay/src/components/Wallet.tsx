@@ -1,15 +1,15 @@
 import User from "../Assets/Ellipse 30.png";
 import { BsBell, BsEye } from "react-icons/bs";
 import style from "./style.module.css";
-import Money from "../Assets/Frame 27402.png";
-import Employee from "../Assets/Frame 27401.png";
-import Payslip from "../Assets/Frame 48095756.png";
-import Salary from "../Assets/Frame 48095758.png";
-import Loan from "../Assets/Frame 48095757.png";
-import Transfer from "../Assets/Frame 48095759.png";
-import Airtime from "../Assets/Group 948.png";
-import Data from "../Assets/Group 949.png";
-import Electricity from "../Assets/Group 951.png";
+import Money from "../Assets/Frame 27402.svg";
+import Employee from "../Assets/Frame 27401.svg";
+import Payslip from "../Assets/Frame 48095756.svg";
+import Salary from "../Assets/Frame 48095758.svg";
+import Loan from "../Assets/Frame 48095757.svg";
+import Transfer from "../Assets/Frame 48095759.svg";
+import Airtime from "../Assets/Group 948.svg";
+import Data from "../Assets/Group 949.svg";
+import Electricity from "../Assets/Group 951.svg";
 
 const data = [
   {
@@ -52,7 +52,7 @@ const data = [
 
 const Wallet = () => {
   return (
-    <section className={`${style.resize_width} p-4 mb-10 md:px-8 lg:px-[8rem] mt-6`}>
+    <section className={`${style.resize_width} p-4 mb-[8rem] md:px-8 lg:px-[8rem] mt-6`}>
       <div>
         <div
           className={`flex justify-between items-center mb-8 fixed z-20 bg-white top-0 right-0 left-0 md:left-[240px] p-4 shadow-sm`}
@@ -100,7 +100,7 @@ const Wallet = () => {
 
               <div className={`my-6 md:my-0`}>
                 <button
-                  className={`p-3 rounded-[24px] bg-[#d9ebcd] w-[132px] text-[.8rem] font-[500] leading-[20px] text-[rgb(17,69,59)]`}
+                  className={`p-3 rounded-[24px] bg-[#d9ebcd] w-[132px] text-[.8rem] font-[500] leading-[20px] text-[rgb(17,69,59)] hover:bg-white hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                 >
                   Fund Wallet
                 </button>

@@ -51,10 +51,10 @@ const BrandInfo = () => {
               <div
                 className={`${
                   style.cards
-                } md:w-[380px] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative cursor-pointer ${
-                  id === 0 ? `md:left-[150px] z-0 md:hover:left-[0]` : ``
+                } md:w-[380px] p-6 rounded-xl shadow-md text-left flex flex-col gap-6 mt-4 relative cursor-pointer hover:transition hover:duration-1000 hover:delay-300 hover:ease-in-out ${
+                  id === 0 ? `${style.transition_card_effect} md:left-[150px] z-0` : ``
                 } ${id === 1 ? `z-10 ` : ``} ${
-                  id === 2 ? `md:left-[-150px] z-0 md:hover:left-[0]` : ``
+                  id === 2 ? `${style.transition_card2_effect} md:left-[-150px] z-0` : ``
                 }`}
               >
                 <h2

@@ -56,32 +56,32 @@ const Settings = () => {
               className={`grid grid-cols-2 shadow-sm border border-[#e7e8e7] rounded-[16px]`}
             >
               <div
-                className={`py-4 px-2 border-r border-b border-[#e7e8e7] rounded-tl-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 border-r border-b border-[#e7e8e7] rounded-tl-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 Company
               </div>
               <div
-                className={`py-4 px-2 border-b border-[#e7e8e7] rounded-tr-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 border-b border-[#e7e8e7] rounded-tr-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 CEO/Founder
               </div>
               <div
-                className={`py-4 px-2 border-b border-r border-[#e7e8e7] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 border-b border-r border-[#e7e8e7] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 Company Director
               </div>
               <div
-                className={`py-4 px-2 border-b border-[#e7e8e7] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 border-b border-[#e7e8e7] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]  hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 Account Information
               </div>
               <div
-                className={`py-4 px-2 border-r border-[#e7e8e7] rounded-bl-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 border-r border-[#e7e8e7] rounded-bl-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 Branch Department
               </div>
               <div
-                className={`py-4 px-2 rounded-br-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb]`}
+                className={`py-4 px-2 rounded-br-[16px] text-center cursor-pointer font-[500] text-[.8rem] leading-[16px] text-[#292a29] hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 KYC Information
               </div>
@@ -111,7 +111,7 @@ const Settings = () => {
                 <div className={`flex gap-4 items-end`}>
                   <img src={CompanyLogo} alt="" />
                   <button
-                    className={`rounded-[8px] border p-2 border-[#11453b] text-[#11453b] text-center font-[500] text-[.8rem] leading-[1rem] outline-none`}
+                    className={`rounded-[8px] border p-2 border-[#11453b] text-[#11453b] text-center font-[500] text-[.8rem] leading-[1rem] outline-none hover:text-white hover:bg-[#11453b] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                   >
                     Change Logo
                   </button>
@@ -143,13 +143,13 @@ const Settings = () => {
                   <div className={`flex flex-col gap-4`}>
                     <div className={`flex gap-4 items-center`}>
                       <button
-                        className={`rounded-[8px] border border-[#e7e8e7] shadow-sm py-2 px-4 bg-[#11453b] text-white w-[100px] text-[.8rem] font-[400] leading-[1rem] space-[.25px]`}
+                        className={`rounded-[8px] border border-[#e7e8e7] shadow-sm py-2 px-4 bg-[#11453b] text-white w-[100px] text-[.8rem] font-[400] leading-[1rem] space-[.25px] hover:bg-[#f0f7eb] hover:text-[#11453b] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                         onClick={() => setRegisteredCompany(true)}
                       >
                         Yes
                       </button>
                       <button
-                        className={`rounded-[8px] border border-[#e7e8e7] shadow-sm py-2 px-4  text-[#515251] bg-white w-[100px] text-[.8rem] font-[400] leading-[1rem] space-[.25px]`}
+                        className={`rounded-[8px] border border-[#e7e8e7] shadow-sm py-2 px-4  text-[#515251] bg-white w-[100px] text-[.8rem] font-[400] leading-[1rem] space-[.25px] hover:border-[#11453b] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
                         onClick={() => setRegisteredCompany(false)}
                       >
                         No
@@ -336,12 +336,12 @@ const Settings = () => {
 
             <div className={`grid grid-cols-2 gap-4 my-6`}>
               <button
-                className={`border border-[11453b] rounded-[24px] px-4 py-2 text-[#11453b] font-[500] text-[.8rem] leading-[20px] space-[.1px] bg-white`}
+                className={`border border-[11453b] rounded-[24px] px-4 py-2 text-[#11453b] font-[500] text-[.8rem] leading-[20px] space-[.1px] bg-white hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition`}
               >
                 Cancel
               </button>
               <button
-                className={`bg-[#11453b] rounded-[24px] px-4 py-2 text-white font-[500] text-[.8rem] leading-[20px] space-[.1px]`}
+                className={`bg-[#11453b] rounded-[24px] px-4 py-2 text-white font-[500] text-[.8rem] leading-[20px] space-[.1px] hover:bg-white hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition hover:text-[#11453b] hover:border hover:border-[#11453b]`}
               >
                 Save
               </button>

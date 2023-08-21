@@ -88,10 +88,34 @@
      transition: .7s;
 }
 
+.transition_effect {
+     animation-duration: 200s;
+     animation-delay: 2s;
+     animation-timing-function: linear;
+}
+
+
+
 
 @media screen and (min-width: 768px){
      .resize_width{
           width: calc(100% - 240px)!important;
           margin-left: auto;
      }
+
+     .transition_card_effect:hover {
+          transform: translateX(-150px);
+          animation-duration: 500s;
+          animation-delay: 2s;
+          animation-timing-function: linear;
+        
+}
+
+     .transition_card2_effect:hover {
+          transform: translateX(150px);
+          animation-duration: 200s;
+          animation-delay: 2s;
+          animation-timing-function: linear;
+        
+}
 }

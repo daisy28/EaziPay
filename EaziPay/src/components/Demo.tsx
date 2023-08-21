@@ -1,4 +1,5 @@
 import { useState } from "react";
+import style from "./style.module.css";
 import Frame2 from "../Assets/Frame 25 (1).png";
 
 const Demo = () => {
@@ -44,13 +45,13 @@ const Demo = () => {
             className={`p-2 flex justify-between items-center border border-[#e7e8e7] rounded-[16px] mb-8 gap-2`}
           >
             <button
-              className={`${company ? `bg-[#f2f1f1] text-[#515251]` : `bg-[#11453b] text-white`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px]`}
+              className={`${company ? `bg-[#f2f1f1] text-[#515251]` : `bg-[#11453b] text-white`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px] hover:bg-[#f0f7eb] hover:border hover:border-[#11453b] hover:text-[#11453b] ease-in-out delay-150 duration-300 transition border`}
               onClick={() => setCompany(false)}
             >
               Individual
             </button>
             <button
-              className={`${company ? `bg-[#11453b] text-white` : `bg-[#f2f1f1] text-[#515251]`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px]`}
+              className={`${company ? `bg-[#11453b] text-white hover:bg-[#f0f7eb] hover:text-[#11453b]` : `bg-[#f2f1f1]  text-[#515251]`} p-3 rounded-[12px] text-[500] text-[1rem] leading-[24px] w-[48%] md:w-[190px] lg:w-[230px] hover:bg-[#f0f7eb] border border-[#f2f1f1] ease-in-out delay-150 duration-300 transition`}
               onClick={() => setCompany(true)}
             >
               Company
@@ -59,37 +60,37 @@ const Demo = () => {
 
           <form action="">
             <input
-              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none`}
+              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none focus:border-[#11453b]`}
               type="text"
               name=""
               id="firstName"
               placeholder="First Name"
             />
             <input
-              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none`}
+              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none focus:border-[#11453b]`}
               type="text"
               name=""
               id="lastName"
               placeholder="Last Name"
             />
             <input
-              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none`}
+              className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none focus:border-[#11453b]`}
               type="text"
               name=""
               id="email"
               placeholder="Email"
             />
             {company ? (
-              <div>
+              <div className={`${style.transition_effect} ${company ? `transition ease-in-out duration-1000 delay-300` : `transition ease-in-out duration-1000 delay-300`}`}>
                 <input
-                  className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none`}
+                  className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none focus:border-[#11453b]`}
                   type="text"
                   name=""
                   id="jobTitle"
                   placeholder="Job Title"
                 />
                 <input
-                  className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none`}
+                  className={`rounded-[16px] border border-[#b5b6b5] p-4 mb-6 w-full outline-none focus:border-[#11453b]`}
                   type="text"
                   name=""
                   id="companyName"
@@ -113,7 +114,7 @@ const Demo = () => {
               </div>
             ) : null}
             <button
-              className={`p-3 px-8 bg-[#11453b] rounded-[24px] text-[500] text-[1rem] leading-[24px] text-white w-full outline-none`}
+              className={`p-3 px-8 border border-[#11453b] bg-[#11453b] rounded-[24px] text-[500] text-[1rem] leading-[24px] text-white w-full outline-none transition ease-in-out duration-700 delay-150 hover:border hover:border-[#11453b] hover:bg-[#f0f7eb] hover:text-[#11453b]`}
             >
               Request Demo
             </button>

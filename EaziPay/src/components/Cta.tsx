@@ -1,4 +1,4 @@
-import CtaImg from "../Assets/Frame 48096458.png";
+import CtaImg from "../Assets/Frame 48096458.svg";
 import Apple from "../Assets/Group 36028.png";
 import Google from "../Assets/Group 36026.png";
 import Frame from "../Assets/Frame 25.png";
@@ -37,7 +37,7 @@ const Cta = () => {
                 className={`flex justify-center items-center gap-2 md:gap-4 md:justify-start`}
               >
                 <div
-                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2 transition duration-300 ease-in-out hover:bg-[#f0f7eb]`}
                 >
                   <img className={`w-[40px] h-[40px]`} src={Apple} alt="Apple Icon" />
                   <div>
@@ -55,7 +55,7 @@ const Cta = () => {
                 </div>
 
                 <div
-                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2 transition duration-300 ease-in-out hover:bg-[#f0f7eb]`}
                 >
                   <img className={`w-[40px] h-[40px]`} src={Google} alt="Google Icon" />
                   <div>

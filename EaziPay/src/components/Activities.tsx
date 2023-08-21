@@ -12,8 +12,8 @@ const Activities = () => {
                     <h1 className={`font-[500] text-[2rem] leading-[40px] text-[#292a29] mb-8`}>Recent Activities</h1>
                     <div className={`flex gap-4 mb-4`}>
                          <div className={`relative`}>
-                              <input type="text" name="search" id="search" placeholder="Search employee" className={`w-[855px] p-3 border border-[#b5b6b5] rounded-[16px] text-[.8rem] font-[400] leading-[16px] text-[#b9bbc0] outline-none bg-white`} />
-                              <div className={`absolute w-[102px] bg-[#d9ebcd] py-2 px-6 rounded-r-[16px] flex justify-center items-center top-0 right-0 cursor-pointer`}>
+                              <input type="text" name="search" id="search" placeholder="Search employee" className={`w-[855px] p-3 border border-[#b5b6b5] rounded-[16px] text-[.8rem] font-[400] leading-[16px] text-[#b9bbc0] outline-none bg-white focus:border-[#11453b]`} />
+                              <div className={`absolute w-[102px] bg-[#d9ebcd] py-2 px-6 rounded-r-[16px] flex justify-center items-center top-[1px] right-[1px] cursor-pointer`}>
                                    <img src={SearchIcon} alt="" />
                               </div>
                          </div>

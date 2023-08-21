@@ -1,5 +1,5 @@
 import Bg from "../Assets/BG.png";
-import Phone from "../Assets/onbrdng 2.png";
+import Phone from "../Assets/payroll-a1eb8ce0.gif";
 import Mask1 from "../Assets/Mask group3.png";
 import Mask2 from "../Assets/Mask group4.png";
 
@@ -15,7 +15,7 @@ const HowItWorks = () => {
           className={`relative mb-12 md:mb-0 md:w-[450px] xl:w-[700px] flex justify-center`}
         >
           <img src={Bg} alt="" />
-          <img className={`absolute top-0 w-[50%]`} src={Phone} alt="" />
+          <img className={`absolute top-0 w-[50%] rounded-[20px]`} src={Phone} alt="" />
         </div>
 
         <div>

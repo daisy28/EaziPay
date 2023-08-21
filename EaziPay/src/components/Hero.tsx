@@ -1,4 +1,4 @@
-import HeroImg from "../Assets/Frame 48096487.png";
+import HeroImg from "../Assets/Frame 48096487.svg";
 import Apple from "../Assets/Group 36028.png";
 import Google from "../Assets/Group 36026.png";
 
@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
             <div className={`mt-8 md:w-[280px]`}>
               <button
-                className={`bg-[#11453b] rounded-3xl p-4 px-8 w-full text-center text-white font-[500] text-[1rem] leading-[24px] relative z-20`}
+                className={`bg-[#11453b] border border-[#11453b] rounded-3xl p-4 px-8 w-full text-center text-white font-[500] text-[1rem] leading-[24px] relative z-20 transition duration-300 delay-150 ease-in-out hover:bg-[#f0f7eb] hover:border hover:border-[#11453b] hover:text-[#11453b]`}
               >
                 Start Using Free, Forever
               </button>
@@ -43,7 +43,7 @@ const Hero = () => {
                 className={`flex justify-center items-center gap-2 md:gap-4 md:justify-start`}
               >
                 <div
-                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2 transition duration-300 delay-150 ease-in-out hover:bg-[#f0f7eb]`}
                 >
                   <img className={`w-[40px] h-[40px]`} src={Apple} alt="Apple Icon" />
                   <div>
@@ -61,7 +61,7 @@ const Hero = () => {
                 </div>
 
                 <div
-                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2`}
+                  className={`bg-white shadow-md w-[177px] h-[72px] flex justify-between items-center p-2 rounded-lg cursor-pointer relative z-20 gap-2 transition duration-300 delay-150 ease-in-out hover:bg-[#f0f7eb]`}
                 >
                   <img className={`w-[40px] h-[40px]`} src={Google} alt="Google Icon" />
                   <div>

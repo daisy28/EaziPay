@@ -59,13 +59,13 @@ const Nav = () => {
 
               <div className={`flex flex-col gap-2 mt-[3rem]  text-[.8rem] font-[500] leading-[20px]`}>
                 <button
-                  className={`border border-[#11453b] p-3 text-green rounded-3xl`}
+                  className={`border border-[#11453b] p-3 text-green rounded-3xl transition duration-300 ease-in-out delay-150 hover:bg-[#f0f7eb]`}
                 >
                   <Link to="/admin">
                     Login
                   </Link>
                 </button>
-                <button className={`p-3 text-white bg-[#11453b] rounded-3xl`}>
+                <button className={`p-3 text-white bg-[#11453b] rounded-3xl transition duration-300 ease-in-out hover:text-[#f0f7eb] delay-150 hover:bg-[#103d34]`}>
                   Register
                 </button>
               </div>
@@ -94,14 +94,14 @@ const Nav = () => {
 
         <div className={` text-[.8rem] font-[500] leading-[20px] gap-2 hidden md:flex`}>
           <button
-            className={`border border-[#11453b] p-3 text-green rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl`}
+            className={`border border-[#11453b] p-3 text-green rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl transition duration-300 delay-150 ease-in-out hover:bg-[#f0f7eb]`}
           >
             <Link to="/admin">
               Login
             </Link>
           </button>
           <button
-            className={`p-3 text-white bg-[#11453b] rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl`}
+            className={`p-3 text-white bg-[#11453b] rounded-2xl w-[90px] lg:w-[120px] lg:rounded-3xl transition duration-300 delay-150 ease-in-out hover:text-[#f0f7eb] hover:bg-[#103d34]`}
           >
             Register
           </button>
