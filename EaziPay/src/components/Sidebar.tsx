@@ -74,7 +74,7 @@ const Sidebar = () => {
             <img className={`relative z-40 h-full w-[239px] object-cover`} src={Logo} alt="" />
           </div>
         
-          <div className={`flex gap-6 md:gap-0 gap-8 md:gap-0 md:block`}>
+          <div className={`flex gap-8 md:gap-0 md:block`}>
             {menuLinks.map(menu => {
               return <div className={`py-4 cursor-pointer hover:border-b-4 hover:border-b-[#11453b] md:hover:border-l-4  md:hover:border-l-[#11453b] md:hover:border-0 hover:bg-[#f0f7eb] hover:ease-in-out hover:delay-150 hover:duration-300 hover:transition ${menu.link === `Settings` ? `md:border-0` : `md:border-b md:border-b-[#e7e8e7]`} ${splitLocation === `${menu.route}` ? `border-b-4 md:border-l-4 border-b-[#11453b] md:border-l-[#11453b] bg-[#f0f7eb] text-[#11453b]` : ``}`} key={menu.link}>
                 <div className={`md:flex gap-4 items-center px-4`}>
