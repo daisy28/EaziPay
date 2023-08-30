@@ -67,7 +67,7 @@ const Sidebar = () => {
   return (
     <section className={`font-face-ae`}>
         <div
-          className={`${style.scroll_style} bg-[#ffffff] w-full md:w-[240px] shadow-lg fixed md:overflow-y-scroll md:overflow-x-hidden overflow-x-scroll md:top-0 bottom-[-5px] md:bottom-0 left-0 right z-20`}
+          className={`${style.scroll_style} bg-[#fff] w-full md:w-[240px] shadow-lg fixed md:overflow-y-scroll md:overflow-x-hidden overflow-x-scroll md:top-0 bottom-[-5px] md:bottom-0 left-0 right z-20`}
       >
         
           <div className={`relative hidden md:block mb-[2.5rem] `}>
